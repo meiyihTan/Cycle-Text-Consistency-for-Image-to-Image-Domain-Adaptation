@@ -68,4 +68,5 @@ python train_IC15_gray_seg_TA_CA_msssim_text_detection.py
 ```
 The weight,result and model will be saved in "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss"  folder by default.
 
-**Several different combination of attention modules(CBAM,TA,CA,SP,...) and type of inputs(with edge or seg) were experimented in "train_on_other_combination" folder and can be trained on more possible combination by changing the UNet in unet_seg.py or unet.py.
+## 
+Several different combination of attention modules(CBAM,TA,CA,SP,...) and type of inputs(with edge or seg) were experimented in "train_on_other_combination" folder and can be trained on more possible combination by changing the UNet in unet_seg.py or unet.py.
