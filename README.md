@@ -5,6 +5,9 @@ The **overall concept** of the work is to carry out a low light enhancement spec
 
 ![concept](https://drive.google.com/uc?export=view&id=1jiA_kUUUiJADQIkdwkBNxxkLn3GQ_ENK)
 
+## Applications
+![application]((https://drive.google.com/uc?export=view&id=1Rl_8PSyFaUK1m1bBP-z-YgbndqKcybZf)
+
 ## Research Objectives
 1)To investigate and introduce feasible framework for low light image enhancement that restore image’s text region details using:
 - segmentation approach 
@@ -93,6 +96,7 @@ python test.py --trained_model=craft_ic15_20k.pth --test_folder=result_IC15_base
 The result image and socre maps will be saved to 'CRAFT-pytorch/result' folder by default.
 - move all the '.txt' file in the 'CRAFT-pytorch/result' folder to 'CRAFT-pytorch/TIoU-CC/results' folder.
 - rename the '.txt' file to "res_img_([0-9]+).txt", where 0-9 is the test image id.
+- Change the folder name in line 45 of main.py in 'TIoU-CC' folder to the folder you newly saved all the moved and renamed '.txt' file.
 - in 'TIoU-CC' folder,  run
 ```
 python main.py 
