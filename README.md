@@ -2,7 +2,7 @@
 This is my Final Year Project which works on carry out low light image enhancement for better scene text detection, click [here](https://drive.google.com/drive/folders/1u1ACc2EpO4phkqlqkoJ9HUKGuGgNEx-5?usp=sharing) for the slides and video explaining on this work in details.
 
 The overall concept of the work is to carry out a low light enhancement specifically on the text regions of low light input img and get the enhanced img, where later on, when a text detector is applied on the enhanced img,  the text regions in the enhanced img can be clearly detected.
-![concept](https://drive.google.com/uc?export=view&id=/1NF5XW9ZqM6WodFWhLB4FYvZIbjUwbkVs)
+![concept](https://drive.google.com/uc?export=view&id=1jiA_kUUUiJADQIkdwkBNxxkLn3GQ_ENK)
 
 ## Research Objectives
 1)To investigate and introduce feasible framework for low light image enhancement that restore image’s text region details using:
@@ -20,7 +20,7 @@ In this model, the core enhancement network,2-heads UNet is guided by (1) 2 atte
 The backbone of this core enhancement network is based on UNet, which is a fully connected network that combine features from different spatial regions of the image.This architecture can capture the fine grain features of the image,can localize more precisely the regions of interests of the image and is able to train end-to-end.
 The attention mechanism helps to focus on enhancing the ROI (text regions), the text detection helps to localize characters in the image, by computing the region score (the probability of the characters) between enhanced image and groundtruth image and the text segmentation helps to guide the learning on text regions by segment out the text regions, get a mask out on the text regions in the image and compare it with the ground truth segmentation image.
 
-![Architecture](https://drive.google.com/uc?export=view&id=1GByeJxFEpJhSSvGWJwaWROBuP3m-eSUr)
+![Architecture](https://drive.google.com/uc?export=view&id=1op6WsaFJmnedZTRj1-bSk2aUwl_Vy_jw)
 
 ## Requirements
 - RawPy 0.13.1
