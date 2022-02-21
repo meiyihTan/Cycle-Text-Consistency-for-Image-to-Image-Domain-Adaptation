@@ -1,7 +1,7 @@
 # Cycle-Text-Consistency-for-Image-to-Image-Domain-Adaptation
 This is my Final Year Project which works on carry out low light image enhancement for better scene text detection, click [here](https://drive.google.com/drive/folders/1u1ACc2EpO4phkqlqkoJ9HUKGuGgNEx-5?usp=sharing) for the slides and video explaining on this work in details.
 
-The **overall concept of the work is to carry out a low light enhancement specifically on the text regions of low light input img and get the enhanced img, where later on, when a text detector is applied on the enhanced img,  the text regions in the enhanced img can be clearly detected.**
+**The overall concept of the work is to carry out a low light enhancement specifically on the text regions of low light input img and get the enhanced img, where later on, when a text detector is applied on the enhanced img,  the text regions in the enhanced img can be clearly detected.**
 ![concept](https://drive.google.com/uc?export=view&id=1jiA_kUUUiJADQIkdwkBNxxkLn3GQ_ENK)
 
 ## Research Objectives
@@ -68,4 +68,4 @@ python train_IC15_gray_seg_TA_CA_msssim_text_detection.py
 ```
 The weight,result and model will be saved in "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss"  folder by default.
 
-###### Several different combination of attention modules(CBAM,TA,CA,SP,...) and type of inputs(with edge or seg) were experimented in "train_on_other_combination" folder and can be trained on more possible combination by changing the UNet in unet_seg.py or unet.py.
+**Several different combination of attention modules(CBAM,TA,CA,SP,...) and type of inputs(with edge or seg) were experimented in "train_on_other_combination" folder and can be trained on more possible combination by changing the UNet in unet_seg.py or unet.py.
