@@ -11,7 +11,7 @@ input_dir = './dataset/IC15_004/test/low/'
 gt_dir = './dataset/IC15_004/test/high/'
 #edge_dir = './dataset/IC15_004/test/test_edge/'
 list_file= './dataset/IC15_004/test_list.txt'
-checkpoint_dir = './IC15_004_results/result_IC15_gray_fullTextSeg_TA_CA_msssim_cv2addweightLoss_text_detection/'
+checkpoint_dir = './IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/'
 result_dir = checkpoint_dir
 ckpt = checkpoint_dir + 'early_stop_model.pth'
 
