@@ -6,7 +6,7 @@ The **overall concept** of the work is to carry out a low light enhancement spec
 ![concept](https://drive.google.com/uc?export=view&id=1jiA_kUUUiJADQIkdwkBNxxkLn3GQ_ENK)
 
 ## Applications
-![application](https://drive.google.com/uc?export=view&id=1Rl_8PSyFaUK1m1bBP-z-YgbndqKcybZf)
+![application](https://drive.google.com/uc?export=view&id=14FQn63D5S392kZ2B-G2Tw-3CeFZemVYN)
 
 ## Research Objectives
 1)To investigate and introduce feasible framework for low light image enhancement that restore image’s text region details using:
