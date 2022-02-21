@@ -11,7 +11,7 @@ gt_dir = '/media/meiyih/meiyih_datasets/baseline_UNet/dataset/IC15_004/test/test
 psnrs, ssims = [], []
 cnt=0
 print('can load')
-for file in glob.glob('/media/meiyih/meiyih_datasets/baseline_UNet/IC15_004_results/result_IC15_gray_fullTextSeg_TA_CA_msssim_cv2addweightLoss_text_detection/final_result_pillow/'+"*.jpg"):
+for file in glob.glob('/media/meiyih/meiyih_datasets/baseline_UNet/IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_pillow/'+"*.jpg"):
     in_fn = file
     print(in_fn)
     fn_idx = in_fn.split('/')[-1]
