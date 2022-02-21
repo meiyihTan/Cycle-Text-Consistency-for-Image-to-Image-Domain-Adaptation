@@ -30,6 +30,10 @@ The **attention mechanism** helps to **focus on enhancing the ROI (text regions)
 ```
 pip install -r requirements.txt
 ```
+Install other prerequisite packages:
+```shell
+pip install shapely Polygon3
+```
 ## Platform
 - ubuntu 20.04
 - nvidia TITAN Xp gpu
@@ -62,11 +66,35 @@ python test_IC15_gray_map_TA_CA_msssim_text_detection.py
 By default, the result will be saved in "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_pillow" and "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_torchvision"  folder.
 
 ## Training
-To train the model, run
+To train the model, run 
 ```
 python train_IC15_gray_seg_TA_CA_msssim_text_detection.py
 ```
 The weight,result and model will be saved in "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss"  folder by default.
 
+## Performance Testing
+1)To get on the psnr and ssim value of the inference output image, run
+```
+python icdar_compute_psnr_ssim.py
+```
+Change the directory in line 14 to the directory where you save the testing results.
+
+2)To get on the IoU, SIoU and TIoU score of the inference output image,
+- download [craft_ic15_20k.pth](https://drive.google.com/file/d/1J552AE1uG0d1ew4ubLI_PjkaOhPdUCSx/view?usp=sharing) and place it into 'CRAFT-pytorch' folder.
+- in 'CRAFT-pytorch' folder ,run
+```
+python test.py --trained_model=craft_ic15_20k.pth --test_folder=result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss
+```
+*test_folder=[folder path to test images]*
+
+The result image and socre maps will be saved to 'CRAFT-pytorch/result' folder by default.
+- move all the '.txt' file in the 'CRAFT-pytorch/result' folder to 'CRAFT-pytorch/TIoU-CC/results' folder.
+- rename the '.txt' file to "res_img_([0-9]+).txt", where 0-9 is the test image id.
+- in 'TIoU-CC' folder ,run
+```
+python main.py 
+```
+to get the IoU, SIoU and TIoU score.
+
 ## 
-*Several different combination of attention modules(CBAM,TA,CA,SP,...) and type of inputs(with edge or seg) were experimented in "train_on_other_combination" folder and can be trained on more possible combination by changing the UNet in unet_seg.py or unet.py.*
+*Several different combination of attention modules(CBAM,TA,CA,SP,...) and type of inputs(with edge or seg) were experimented in "train_on_other_combination" folder. Move the train....py file out to parent folder,'Cycle-Text-Consistency-for-Image-to-Image-Domain-Adaptation' folder, if training want to be carry out. One can also try out on more possible combination by changing the UNet in unet_seg.py or unet.py.*
