@@ -58,20 +58,22 @@ streamlit run main.py
 ```
 
 ## Testing
-The pretrained model [here](https://github.com/meiyihTan/Cycle-Text-Consistency-for-Image-to-Image-Domain-Adaptation/blob/master/IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/early_stop_model.pth) is in `./Cycle-Text-Consistency-for-Image-to-Image-Domain-Adaptation/IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss`. 
+The [pretrained model ](https://github.com/meiyihTan/Cycle-Text-Consistency-for-Image-to-Image-Domain-Adaptation/blob/master/IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/early_stop_model.pth) is in `./Cycle-Text-Consistency-for-Image-to-Image-Domain-Adaptation/IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss`. 
 
 To test ICDAR15 test data, run
 ```
 python test_IC15_gray_map_TA_CA_msssim_text_detection.py
 ```
-By default, the result will be saved in "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_pillow" and "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_torchvision"  folder.
+By default, the result will be saved in 
+- "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_pillow" and 
+- "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_torchvision"  folder.
 
 ## Training
 To train the model, run 
 ```
 python train_IC15_gray_seg_TA_CA_msssim_text_detection.py
 ```
-The weight,result and model will be saved in "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss"  folder by default.
+The weight, result and model will be saved in "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss"  folder by default.
 
 ## Performance Testing
 1)To get on the psnr and ssim value of the inference output image, run
