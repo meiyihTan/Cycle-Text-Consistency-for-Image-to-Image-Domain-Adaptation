@@ -17,7 +17,7 @@ and have comparable performance with existing baseline model.
 *Novelty : Enhance the text regions of low light image, where in our proposed method text regions will be focused and enhanced together with the background region as a whole.*
 
 ## Network Architecture
-In this model, the core enhancement network,2-heads UNet is guided by **(1) 2 attention module (triplet attention and coordinate attention) through multiplication of feature map with attention map, and (2) a text detector.**
+In this model, the core enhancement network, 2-heads UNet is guided by **(1) 2 attention module (triplet attention and coordinate attention) through multiplication of feature map with attention map, and (2) a text detector.**
 
 ![Architecture](https://drive.google.com/uc?export=view&id=1op6WsaFJmnedZTRj1-bSk2aUwl_Vy_jw)
 
@@ -50,7 +50,7 @@ To simulate the low light scenario, I reduce the brightness of the images to 0.0
 The script to create text segmentation groundtruth and to adjust brightness of original ICDAR15 image to simulate low light dataset can be get in 'create_binary_textseg_map.ipynb'.
 
 ## UI
-I build a simple user interface using Streamlit to demonstrate the work (only can run on local pc). User can select an low light input image, then the enhanced image and the text detection of the enhanced image(show in bbx) will be returned.
+I build a simple user interface using Streamlit to demonstrate the work (only can run on local pc). User can select an low light input image, then the enhanced image and the text detection of the enhanced image(show in bounding box) will be returned.
 
 To run the streamlit app:
 ```
