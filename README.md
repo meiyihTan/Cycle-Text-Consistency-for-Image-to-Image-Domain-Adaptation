@@ -13,7 +13,7 @@ and have comparable performance with existing baseline model.
 
 2)Introduce a text (segmentation/detection) loss to make the object(text) in enhanced image to be visual clearly.
 
-*Novelty : Enhance the text regions of low light image, where in our proposed method text regions will be focused and enhanced together with the background region as a whole.
+*Novelty : Enhance the text regions of low light image, where in our proposed method text regions will be focused and enhanced together with the background region as a whole.*
 
 ## Network Architecture
 In this model, the core enhancement network,2-heads UNet is guided by **(1) 2 attention module (triplet attention and coordinate attention) through multiplication of feature map with attention map, and (2) a text detector.**
@@ -69,4 +69,4 @@ python train_IC15_gray_seg_TA_CA_msssim_text_detection.py
 The weight,result and model will be saved in "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss"  folder by default.
 
 ## 
-Several different combination of attention modules(CBAM,TA,CA,SP,...) and type of inputs(with edge or seg) were experimented in "train_on_other_combination" folder and can be trained on more possible combination by changing the UNet in unet_seg.py or unet.py.
+*Several different combination of attention modules(CBAM,TA,CA,SP,...) and type of inputs(with edge or seg) were experimented in "train_on_other_combination" folder and can be trained on more possible combination by changing the UNet in unet_seg.py or unet.py.*
