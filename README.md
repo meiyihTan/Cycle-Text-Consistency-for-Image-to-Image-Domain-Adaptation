@@ -1,7 +1,7 @@
 # Cycle-Text-Consistency-for-Image-to-Image-Domain-Adaptation
 This is my Final Year Project which works on carry out low light image enhancement for better scene text detection, click [here](https://drive.google.com/drive/folders/1u1ACc2EpO4phkqlqkoJ9HUKGuGgNEx-5?usp=sharing) for the slides and video explaining on this work in details.
 
-The **overall concept** of the work is to carry out a low light enhancement specifically on the text regions of low light input img and get the enhanced img, where later on, when a text detector is applied on the enhanced img,  the text regions in the enhanced img can be clearly detected.
+The **overall concept** of the work is to carry out a low light enhancement specifically on the text regions of low light input image and get the enhanced image, where later on, when a text detector is applied on the enhanced image,  the text regions in the enhanced image can be clearly detected.
 
 ![concept](https://drive.google.com/uc?export=view&id=1jiA_kUUUiJADQIkdwkBNxxkLn3GQ_ENK)
 
