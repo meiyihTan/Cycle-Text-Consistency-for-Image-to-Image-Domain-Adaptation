@@ -64,9 +64,9 @@ To test ICDAR15 test data, run
 ```
 python test_IC15_gray_map_TA_CA_msssim_text_detection.py
 ```
-By default, the result will be saved in 
-- "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_pillow" and 
-- "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_torchvision"  folder.
+By default, the result will be saved in :
+- "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_pillow" 
+- "IC15_004_results/result_IC15_baseline_gray_fullTextSeg_TA_CA_msssim_text_detection_text_det_loss/final_result_torchvision" 
 
 ## Training
 To train the model, run 
